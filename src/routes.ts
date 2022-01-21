@@ -5,6 +5,7 @@ const Table = React.lazy(() => import('./components/dummy/Table'));
 
 const routes = [
   { path: '/table', name: 'table', component: Table },
+  { path: '/table', name: 'table', component: Table },
 ];
 
 export default routes;

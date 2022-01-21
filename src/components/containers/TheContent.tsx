@@ -2,7 +2,7 @@ import { CContainer } from '@coreui/react-pro';
 import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import routes from '../../routes';
-import Lost from '../Lost';
+import Lost from '../Page404';
 
 
 const loading = (

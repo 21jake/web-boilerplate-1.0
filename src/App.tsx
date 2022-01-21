@@ -1,6 +1,5 @@
 import React from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import TheLayout from './components/containers/TheLayout';
 
 const loading = (
   <div className="pt-3 text-center">
@@ -8,16 +7,26 @@ const loading = (
   </div>
 );
 
+const Login = React.lazy(() => import('./components/dummy/pages/login/Login'));
+const Register = React.lazy(() => import('./components/dummy/pages/register/Register'));
+const Page404 = React.lazy(() => import('./components/Page404'));
+const Page500 = React.lazy(() => import('./components/Page500'));
+const TheLayout = React.lazy(() => import('./components/containers/TheLayout'));
+
 const App = () => {
   return (
     <HashRouter>
       <React.Suspense fallback={loading}>
         <Routes>
-          <Route path="*" element={<TheLayout />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/500" element={<Page500 />} />
+          <Route path="/404" element={<Page404 />} />
+          <Route path="/" element={<TheLayout />} />
         </Routes>
       </React.Suspense>
     </HashRouter>
   );
-}
+};
 
 export default App;

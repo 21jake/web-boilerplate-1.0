@@ -30,7 +30,7 @@ const TheSidebar = () => {
         <CNavTitle>Nav Title</CNavTitle>
           <CNavItem href='#/table'>
             <CIcon customClassName="nav-icon" icon={cilSpeedometer} />
-            Nav item
+            Table
           </CNavItem>
         <CNavItem href="#">
           <CIcon customClassName="nav-icon" icon={cilSpeedometer} />
