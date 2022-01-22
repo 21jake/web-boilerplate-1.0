@@ -8,18 +8,19 @@ import {
   CHeaderNav,
   CHeaderToggler,
   CNavItem,
-  CNavLink
+  CNavLink,
 } from '@coreui/react-pro';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../reducers';
+import AppBreadcrumb from './AppBreadcrumb';
 import { toggleSidebar } from './reducer';
 
 const TheHeader = () => {
   const dispatch = useDispatch();
-  const {sidebarShow} = useSelector((state: RootState) => state.container);
+  const { sidebarShow } = useSelector((state: RootState) => state.container);
 
-  const toggleSidebarDesktop = ()=> {
+  const toggleSidebarDesktop = () => {
     dispatch(toggleSidebar(!sidebarShow));
   };
 
@@ -62,7 +63,7 @@ const TheHeader = () => {
       </CContainer>
       <CHeaderDivider />
       <CContainer fluid>
-        <CBreadcrumb />
+        <AppBreadcrumb />
       </CContainer>
     </CHeader>
   );
