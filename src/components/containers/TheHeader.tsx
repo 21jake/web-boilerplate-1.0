@@ -29,11 +29,11 @@ const TheHeader = () => {
       <CContainer fluid>
         {/* <CHeaderBrand className="mx-auto d-md-none" >
       </CHeaderBrand> */}
-        <CHeaderNav className="d-none d-md-flex me-auto">
+        <CHeaderNav className="d-flex me-auto">
           <CHeaderToggler className="ps-1" onClick={toggleSidebarDesktop}>
             <CIcon icon={cilMenu} size="lg" />
           </CHeaderToggler>
-          <CNavItem>
+        <CNavItem>
             <CNavLink href="#">Home</CNavLink>
           </CNavItem>
           <CNavItem>
