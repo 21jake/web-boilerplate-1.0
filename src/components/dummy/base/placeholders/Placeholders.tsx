@@ -8,6 +8,7 @@ import {
   CCardText,
   CCardTitle,
   CCol,
+  CImage,
   CPlaceholder,
   CRow,
 } from '@coreui/react-pro'
@@ -32,7 +33,7 @@ const Placeholders = () => {
             <DocsExample href="components/placeholder">
               <div className="d-flex justify-content-around p-3">
                 <CCard style={{ width: '18rem' }}>
-                  <CCardImage orientation="top" />
+                  <CImage src={ReactImg} />
                   <CCardBody>
                     <CCardTitle>Card title</CCardTitle>
                     <CCardText>

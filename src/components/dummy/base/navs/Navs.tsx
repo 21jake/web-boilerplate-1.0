@@ -30,7 +30,7 @@ const Navs = () => {
               overrides (for working with lists), some link padding for larger hit areas, and basic
               disabled styling.
             </p>
-            <DocsExample href="components/nav#base-nav">
+            <DocsExample href="components/navs-tabs#base-nav">
               <CNav>
                 <CNavItem>
                   <CNavLink href="#" active>
@@ -57,7 +57,7 @@ const Navs = () => {
               the .nav uses display: flex, the nav links behave the same as nav items would, but
               without the extra markup.
             </p>
-            <DocsExample href="components/nav#base-nav">
+            <DocsExample href="components/navs-tabs#base-nav">
               <CNav component="nav">
                 <CNavLink href="#" active>
                   Active
@@ -89,7 +89,7 @@ const Navs = () => {
             <p className="text-medium-emphasis small">
               Centered with <code>.justify-content-center</code>:
             </p>
-            <DocsExample href="components/nav#horizontal-alignment">
+            <DocsExample href="components/navs-tabs#horizontal-alignment">
               <CNav className="justify-content-center">
                 <CNavItem>
                   <CNavLink href="#" active>
@@ -112,7 +112,7 @@ const Navs = () => {
             <p className="text-medium-emphasis small">
               Right-aligned with <code>.justify-content-end</code>:
             </p>
-            <DocsExample href="components/nav#base-nav">
+            <DocsExample href="components/navs-tabs#base-nav">
               <CNav className="justify-content-end">
                 <CNavItem>
                   <CNavLink href="#" active>
@@ -146,7 +146,7 @@ const Navs = () => {
               <code>.flex-column</code> utility. Need to stack them on some viewports but not
               others? Use the responsive versions (e.g., <code>.flex-sm-column</code>).
             </p>
-            <DocsExample href="components/nav#vertical">
+            <DocsExample href="components/navs-tabs#vertical">
               <CNav className="flex-column">
                 <CNavItem>
                   <CNavLink href="#" active>
@@ -179,7 +179,7 @@ const Navs = () => {
               Takes the basic nav from above and adds the <code>variant=&#34;tabs&#34;</code> class
               to generate a tabbed interface
             </p>
-            <DocsExample href="components/nav#tabs">
+            <DocsExample href="components/navs-tabs#tabs">
               <CNav variant="tabs">
                 <CNavItem>
                   <CNavLink href="#" active>
@@ -211,7 +211,7 @@ const Navs = () => {
             <p className="text-medium-emphasis small">
               Take that same HTML, but use <code>variant=&#34;pills&#34;</code> instead:
             </p>
-            <DocsExample href="components/nav#pills">
+            <DocsExample href="components/navs-tabs#pills">
               <CNav variant="pills">
                 <CNavItem>
                   <CNavLink href="#" active>
@@ -246,7 +246,7 @@ const Navs = () => {
               <code>.nav-item</code>s, use <code>layout=&#34;fill&#34;</code>. Notice that all
               horizontal space is occupied, but not every nav item has the same width.
             </p>
-            <DocsExample href="components/nav#fill-and-justify">
+            <DocsExample href="components/navs-tabs#fill-and-justify">
               <CNav variant="pills" layout="fill">
                 <CNavItem>
                   <CNavLink href="#" active>
@@ -271,7 +271,7 @@ const Navs = () => {
               space will be occupied by nav links, but unlike the .nav-fill above, every nav item
               will be the same width.
             </p>
-            <DocsExample href="components/nav#fill-and-justify">
+            <DocsExample href="components/navs-tabs#fill-and-justify">
               <CNav variant="pills" layout="justified">
                 <CNavItem>
                   <CNavLink href="#" active>
@@ -307,7 +307,7 @@ const Navs = () => {
               the example below, our nav will be stacked on the lowest breakpoint, then adapt to a
               horizontal layout that fills the available width starting from the small breakpoint.
             </p>
-            <DocsExample href="components/nav#working-with-flex-utilities">
+            <DocsExample href="components/navs-tabs#working-with-flex-utilities">
               <CNav component="nav" variant="pills" className="flex-column flex-sm-row">
                 <CNavLink href="#" active>
                   Active
@@ -328,7 +328,7 @@ const Navs = () => {
             <strong>React Navs</strong> <small>Tabs with dropdowns</small>
           </CCardHeader>
           <CCardBody>
-            <DocsExample href="components/nav#tabs-with-dropdowns">
+            <DocsExample href="components/navs-tabs#tabs-with-dropdowns">
               <CNav>
                 <CNavItem>
                   <CNavLink href="#" active>
@@ -362,7 +362,7 @@ const Navs = () => {
             <strong>React Navs</strong> <small>Pills with dropdowns</small>
           </CCardHeader>
           <CCardBody>
-            <DocsExample href="components/nav#pills-with-dropdowns">
+            <DocsExample href="components/navs-tabs#pills-with-dropdowns">
               <CNav variant="pills">
                 <CNavItem>
                   <CNavLink href="#" active>
